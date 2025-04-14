@@ -4,4 +4,4 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "e:/C# game/Content/hero (2).png","e:/C# game/Content/bin/DesktopGL/hero (2).xnb","TextureProcessor","Texture2DContent",311725,2560085,0.0841977
 "e:/C# game/Content/map.png","e:/C# game/Content/bin/DesktopGL/map.xnb","TextureProcessor","Texture2DContent",91159,29245525,0.5651926
 "e:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","e:/C# game/Content/bin/DesktopGL/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.1780281
-"e:/C# game/Content/white.webp","e:/C# game/Content/bin/DesktopGL/white.xnb","TextureProcessor","Texture2DContent",688,426325,0.014778
+"e:/C# game/Content/white.jpg","e:/C# game/Content/bin/DesktopGL/white.xnb","TextureProcessor","Texture2DContent",25497,8294485,0.3146612

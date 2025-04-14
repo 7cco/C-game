@@ -31,10 +31,8 @@ public class Hero
         (int)_position.Y,
         _texture.Width,
         _texture.Height
-    ); 
+    );
     public Vector2 Position => _position;
-
-
 
 
 

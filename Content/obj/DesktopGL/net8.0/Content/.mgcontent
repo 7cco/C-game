@@ -9,8 +9,10 @@
     <File>E:/C# game/Content/hero (2).png</File>
     <File>E:/C# game/Content/map.png</File>
     <File>E:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg</File>
+    <File>E:/C# game/Content/white.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

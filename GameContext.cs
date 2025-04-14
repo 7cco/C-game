@@ -4,14 +4,12 @@ public class GameContext
 {
     public ContentManager Content { get; }
     public SpriteBatch SpriteBatch { get; }
-    public GraphicsDevice GraphicsDevice { get; }
     public float TotalSeconds { get; private set; }
 
-    public GameContext(ContentManager content, SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
+    public GameContext(ContentManager content, SpriteBatch spriteBatch)
     {
         Content = content;
         SpriteBatch = spriteBatch;
-        GraphicsDevice = graphicsDevice;
     }
 
     public void Update(GameTime gameTime)

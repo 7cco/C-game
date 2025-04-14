@@ -28,11 +28,10 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-
         // Создаем контекст игры
-        _context = new GameContext(Content, _spriteBatch, GraphicsDevice);
+        _context = new GameContext(Content, _spriteBatch);
 
-         _background = new Map(_context, "map");
+        _background = new Map(_context, "polka-dots-dots-tile-minimalism-wallpaper");
         _camera = new CameraManager(GraphicsDevice.Viewport, _background.MapWidth, _background.MapHeight);
         
         // Инициализируем менеджер игры

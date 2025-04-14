@@ -22,9 +22,6 @@ public class GameManager
         _previousHeroPosition = _hero.Position;
         // Обновляем InputManager
         InputManager.Update();
-
-
-
         // Обновляем логику героя
         _hero.Update(context);
 
