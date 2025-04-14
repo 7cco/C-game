@@ -59,8 +59,8 @@ e:\game copy\bin\Debug\net8.0\Content\Bricks_01-256x256.xnb
 e:\game copy\bin\Debug\net8.0\Content\polka-dots-dots-tile-minimalism-wallpaper.xnb
 e:\C# game\bin\Debug\net8.0\Content\Bricks_01-256x256.xnb
 e:\C# game\bin\Debug\net8.0\Content\gg9.xnb
-e:\C# game\bin\Debug\net8.0\Content\hero (2).xnb
-e:\C# game\bin\Debug\net8.0\Content\map.xnb
 e:\C# game\bin\Debug\net8.0\Content\polka-dots-dots-tile-minimalism-wallpaper.xnb
 e:\C# game\obj\Debug\net8.0\C# game.sourcelink.json
 e:\C# game\bin\Debug\net8.0\Content\white.xnb
+e:\C# game\bin\Debug\net8.0\Content\rectangle.xnb
+e:\C# game\bin\Debug\net8.0\Content\rectangle2.xnb

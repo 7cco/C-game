@@ -1,7 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"e:/C# game/Content/Bricks_01-256x256.png","e:/C# game/Content/bin/DesktopGL/Bricks_01-256x256.xnb","TextureProcessor","Texture2DContent",441123,262229,0.1159449
-"e:/C# game/Content/gg9.png","e:/C# game/Content/bin/DesktopGL/gg9.xnb","TextureProcessor","Texture2DContent",11714,167317,0.0077351
-"e:/C# game/Content/hero (2).png","e:/C# game/Content/bin/DesktopGL/hero (2).xnb","TextureProcessor","Texture2DContent",311725,2560085,0.0841977
-"e:/C# game/Content/map.png","e:/C# game/Content/bin/DesktopGL/map.xnb","TextureProcessor","Texture2DContent",91159,29245525,0.5651926
-"e:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","e:/C# game/Content/bin/DesktopGL/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.1780281
-"e:/C# game/Content/white.jpg","e:/C# game/Content/bin/DesktopGL/white.xnb","TextureProcessor","Texture2DContent",25497,8294485,0.3146612
+"e:/C# game/Content/Bricks_01-256x256.png","e:/C# game/Content/bin/DesktopGL/Bricks_01-256x256.xnb","TextureProcessor","Texture2DContent",441123,262229,0.1051531
+"e:/C# game/Content/gg9.png","e:/C# game/Content/bin/DesktopGL/gg9.xnb","TextureProcessor","Texture2DContent",11714,167317,0.0074231
+"e:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","e:/C# game/Content/bin/DesktopGL/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.1949541
+"e:/C# game/Content/rectangle.png","e:/C# game/Content/bin/DesktopGL/rectangle.xnb","TextureProcessor","Texture2DContent",204,10085,0.0030282
+"e:/C# game/Content/rectangle2.png","e:/C# game/Content/bin/DesktopGL/rectangle2.xnb","TextureProcessor","Texture2DContent",210,10085,0.0030442

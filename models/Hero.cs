@@ -6,6 +6,7 @@ public class Hero
     private Vector2 _position = new(100, 100);
     private readonly float _speed = 200f;
     private readonly AnimationManager _anims;
+    public Vector2 Position => _position;
 
     public Hero(GameContext context)
     {
@@ -29,10 +30,14 @@ public class Hero
     public Rectangle Bounds => new Rectangle(
         (int)_position.X,
         (int)_position.Y,
-        _texture.Width,
-        _texture.Height
+        25,
+        25
     );
-    public Vector2 Position => _position;
+
+    public void SetPosition(Vector2 newPosition)
+    {
+        _position = newPosition;
+    }
 
 
 

@@ -45,7 +45,7 @@ public class Game1 : Game
         {
             Exit();
         }
-
+        
         // Обновляем контекст игры
         _context.Update(gameTime);
         // Обновляем логику игры
@@ -57,11 +57,13 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime)
     {
+
         GraphicsDevice.Clear(Color.Beige);
 
         _spriteBatch.Begin(transformMatrix: _camera.GetViewMatrix());
 
         _background.Draw(_context);
+
         // Рисуем игру через менеджер
         _gameManager.Draw(_context);
 
@@ -69,4 +71,5 @@ public class Game1 : Game
 
         base.Draw(gameTime);
     }
+
 }
