@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"e:/game copy/Content/Bricks_01-256x256.png","e:/game copy/Content/bin/DesktopGL/Bricks_01-256x256.xnb","TextureProcessor","Texture2DContent",441123,262229,0.1507595
+"e:/game copy/Content/gg9.png","e:/game copy/Content/bin/DesktopGL/gg9.xnb","TextureProcessor","Texture2DContent",11714,167317,0.1187814
+"e:/game copy/Content/hero (2).png","e:/game copy/Content/bin/DesktopGL/hero (2).xnb","TextureProcessor","Texture2DContent",311725,2560085,0.0768222
+"e:/game copy/Content/map.png","e:/game copy/Content/bin/DesktopGL/map.xnb","TextureProcessor","Texture2DContent",91159,29245525,0.5661429
+"e:/game copy/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","e:/game copy/Content/bin/DesktopGL/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.2222719
