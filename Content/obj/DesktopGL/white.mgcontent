@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>e:/C# game/Content/hero (2).png</SourceFile>
-  <SourceTime>2025-04-06T16:22:40.9451339+05:00</SourceTime>
-  <DestFile>e:/C# game/Content/bin/DesktopGL/hero (2).xnb</DestFile>
-  <DestTime>2025-04-14T12:29:51.2954625+05:00</DestTime>
+  <SourceFile>e:/C# game/Content/white.webp</SourceFile>
+  <SourceTime>2025-04-14T12:28:29.9326576+05:00</SourceTime>
+  <DestFile>e:/C# game/Content/bin/DesktopGL/white.xnb</DestFile>
+  <DestTime>2025-04-14T12:29:52.0556347+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T22:05:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

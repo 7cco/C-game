@@ -62,3 +62,4 @@ e:\C# game\bin\Debug\net8.0\Content\gg9.xnb
 e:\C# game\bin\Debug\net8.0\Content\hero (2).xnb
 e:\C# game\bin\Debug\net8.0\Content\map.xnb
 e:\C# game\bin\Debug\net8.0\Content\polka-dots-dots-tile-minimalism-wallpaper.xnb
+e:\C# game\obj\Debug\net8.0\C# game.sourcelink.json
