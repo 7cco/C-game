@@ -24,7 +24,7 @@ public class GameManager
 
     public void Init()
     {
-        // Дополнительная инициализация, если требуется
+        
     }
 
     public void Update(GameContext context)

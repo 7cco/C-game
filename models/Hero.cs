@@ -11,47 +11,33 @@ public class Hero
     public Hero(GameContext context)
     {
         // Загружаем текстуру через контекст
-        _texture = context.Content.Load<Texture2D>("gg9");
+        _texture = context.Content.Load<Texture2D>("final gg-2x");
 
         // Инициализируем менеджер анимаций
         _anims = new AnimationManager();
 
         // Добавляем анимации для всех направлений движения
-        _anims.AddAnimation(new Vector2(0, 1), new Animation(_texture, 7, 8, 0.1f, 1));   // Вниз
-        _anims.AddAnimation(new Vector2(-1, 0), new Animation(_texture, 7, 8, 0.1f, 2)); // Влево
-        _anims.AddAnimation(new Vector2(1, 0), new Animation(_texture, 7, 8, 0.1f, 3));  // Вправо
-        _anims.AddAnimation(new Vector2(0, -1), new Animation(_texture, 7, 8, 0.1f, 4)); // Вверх
-        _anims.AddAnimation(new Vector2(-1, 1), new Animation(_texture, 7, 8, 0.1f, 5)); // Влево-вниз
-        _anims.AddAnimation(new Vector2(-1, -1), new Animation(_texture, 7, 8, 0.1f, 6)); // Влево-вверх
-        _anims.AddAnimation(new Vector2(1, 1), new Animation(_texture, 7, 8, 0.1f, 7));  // Вправо-вниз
-        _anims.AddAnimation(new Vector2(1, -1), new Animation(_texture, 7, 8, 0.1f, 8)); // Вправо-вверх
+        _anims.AddAnimation(new Vector2(0, 1), new Animation(_texture, 6, 4, 0.1f, 4));   // Вниз
+        _anims.AddAnimation(new Vector2(-1, 0), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево
+        _anims.AddAnimation(new Vector2(1, 0), new Animation(_texture, 6, 4, 0.1f, 1));  // Вправо
+        _anims.AddAnimation(new Vector2(0, -1), new Animation(_texture, 6, 4, 0.1f, 3)); // Вверх
+        _anims.AddAnimation(new Vector2(-1, 1), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево-вниз
+        _anims.AddAnimation(new Vector2(-1, -1), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево-вверх
+        _anims.AddAnimation(new Vector2(1, 1), new Animation(_texture, 6, 4, 0.1f, 1));  // Вправо-вниз
+        _anims.AddAnimation(new Vector2(1, -1), new Animation(_texture, 6, 4, 0.1f, 1)); // Вправо-вверх
     }
 
     public Rectangle Bounds => new Rectangle(
         (int)_position.X,
         (int)_position.Y,
-        25,
-        25
+        56,
+        50
     );
 
     public void SetPosition(Vector2 newPosition)
     {
         _position = newPosition;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

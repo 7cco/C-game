@@ -1,4 +1,3 @@
-
 namespace C__game;
 
 public class Animation

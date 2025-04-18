@@ -64,3 +64,5 @@ e:\C# game\obj\Debug\net8.0\C# game.sourcelink.json
 e:\C# game\bin\Debug\net8.0\Content\white.xnb
 e:\C# game\bin\Debug\net8.0\Content\rectangle.xnb
 e:\C# game\bin\Debug\net8.0\Content\rectangle2.xnb
+e:\C# game\bin\Debug\net8.0\Content\gg9-2x.xnb
+e:\C# game\bin\Debug\net8.0\Content\final gg-2x.xnb

@@ -27,6 +27,5 @@ public class Map
         position: _position,
         color: Color.White);
     }
-
-
+    
 }
