@@ -31,7 +31,7 @@ public class Game1 : Game
         // Создаем контекст игры
         _context = new GameContext(Content, _spriteBatch);
 
-        _background = new Map(_context, "polka-dots-dots-tile-minimalism-wallpaper");
+        _background = new Map(_context, "genmap");
         _camera = new CameraManager(GraphicsDevice.Viewport, _background.MapWidth, _background.MapHeight);
         
         // Инициализируем менеджер игры
@@ -63,10 +63,8 @@ public class Game1 : Game
         _spriteBatch.Begin(transformMatrix: _camera.GetViewMatrix());
 
         _background.Draw(_context);
-
         // Рисуем игру через менеджер
         _gameManager.Draw(_context);
-
         _spriteBatch.End();
 
         base.Draw(gameTime);

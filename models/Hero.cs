@@ -38,15 +38,7 @@ public class Hero
     {
         _position = newPosition;
     }
-
-
-
-
-
-
-
-
-
+    
     public void Update(GameContext context)
     {
         // Обновляем позицию героя, если он движется
