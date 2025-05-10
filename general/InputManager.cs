@@ -19,4 +19,30 @@ public static class InputManager
             if (keyboardState.IsKeyDown(Keys.S)) _direction.Y++;
         }
     }
+
+    public static bool IsShooting()
+    {
+        return Keyboard.GetState().IsKeyDown(Keys.Space) || 
+               Mouse.GetState().LeftButton == ButtonState.Pressed;
+    }
+
+    public static bool IsReloading()
+    {
+        return Keyboard.GetState().IsKeyDown(Keys.R);
+    }
+
+    public static bool IsPistolSelected()
+    {
+        return Keyboard.GetState().IsKeyDown(Keys.D1);
+    }
+
+    public static bool IsSniperRifleSelected()
+    {
+        return Keyboard.GetState().IsKeyDown(Keys.D2);
+    }
+
+    public static bool IsAssaultRifleSelected()
+    {
+        return Keyboard.GetState().IsKeyDown(Keys.D3);
+    }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# game\\C# game.csproj": {}
+    "E:\\C# game for cursor\\C# game.csproj": {}
   },
   "projects": {
-    "E:\\C# game\\C# game.csproj": {
+    "E:\\C# game for cursor\\C# game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# game\\C# game.csproj",
+        "projectUniqueName": "E:\\C# game for cursor\\C# game.csproj",
         "projectName": "C# game",
-        "projectPath": "E:\\C# game\\C# game.csproj",
+        "projectPath": "E:\\C# game for cursor\\C# game.csproj",
         "packagesPath": "C:\\Users\\nicki\\.nuget\\packages\\",
-        "outputPath": "E:\\C# game\\obj\\",
+        "outputPath": "E:\\C# game for cursor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicki\\AppData\\Roaming\\NuGet\\NuGet.Config"

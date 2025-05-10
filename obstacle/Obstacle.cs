@@ -3,7 +3,7 @@ namespace C__game;
 public class Obstacle
 {
     public Texture2D Texture { get; private set; }
-    public Rectangle Bounds { get; private set; }
+    public Rectangle Bounds;
     
 
     public Obstacle(GameContext context, string textureName, Vector2 pos, int width, int height)

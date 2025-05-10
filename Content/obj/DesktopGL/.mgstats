@@ -1,7 +1,12 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"e:/C# game/Content/Bricks_01-256x256.png","e:/C# game/Content/bin/DesktopGL/Bricks_01-256x256.xnb","TextureProcessor","Texture2DContent",441123,262229,0.1085402
-"e:/C# game/Content/final gg-2x.png","e:/C# game/Content/bin/DesktopGL/final gg-2x.xnb","TextureProcessor","Texture2DContent",8541,295765,0.0111549
-"e:/C# game/Content/genmap.png","e:/C# game/Content/bin/DesktopGL/genmap.xnb","TextureProcessor","Texture2DContent",310338,4194389,0.1371689
-"e:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","e:/C# game/Content/bin/DesktopGL/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.2144348
-"e:/C# game/Content/rectangle.png","e:/C# game/Content/bin/DesktopGL/rectangle.xnb","TextureProcessor","Texture2DContent",204,10085,0.002134
-"e:/C# game/Content/rectangle2.png","e:/C# game/Content/bin/DesktopGL/rectangle2.xnb","TextureProcessor","Texture2DContent",210,10085,0.0019132
+"e:/C# game for cursor/Content/bullet.png","e:/C# game for cursor/Content/bin/DesktopGL/bullet.xnb","TextureProcessor","Texture2DContent",105,149,0.091496
+"e:/C# game for cursor/Content/final gg-2x.png","e:/C# game for cursor/Content/bin/DesktopGL/final gg-2x.xnb","TextureProcessor","Texture2DContent",8541,295765,0.0169337
+"e:/C# game for cursor/Content/font.spritefont","e:/C# game for cursor/Content/bin/DesktopGL/font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.1561116
+"e:/C# game for cursor/Content/genmap.png","e:/C# game for cursor/Content/bin/DesktopGL/genmap.xnb","TextureProcessor","Texture2DContent",310338,4194389,0.1371466
+"e:/C# game for cursor/Content/pistol.png","e:/C# game for cursor/Content/bin/DesktopGL/pistol.xnb","TextureProcessor","Texture2DContent",183,4181,0.0027247
+"e:/C# game for cursor/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","e:/C# game for cursor/Content/bin/DesktopGL/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.3019604
+"e:/C# game for cursor/Content/rectangle.png","e:/C# game for cursor/Content/bin/DesktopGL/rectangle.xnb","TextureProcessor","Texture2DContent",204,10085,0.002538
+"e:/C# game for cursor/Content/rectangle2.png","e:/C# game for cursor/Content/bin/DesktopGL/rectangle2.xnb","TextureProcessor","Texture2DContent",210,10085,0.0037623
+"e:/C# game for cursor/Content/rifl.png","e:/C# game for cursor/Content/bin/DesktopGL/rifl.xnb","TextureProcessor","Texture2DContent",414,16469,0.0047286
+"e:/C# game for cursor/Content/sniper.png","e:/C# game for cursor/Content/bin/DesktopGL/sniper.xnb","TextureProcessor","Texture2DContent",381,16469,0.0027564
+"e:/C# game for cursor/Content/wall.png","e:/C# game for cursor/Content/bin/DesktopGL/wall.xnb","TextureProcessor","Texture2DContent",441123,262229,0.0177592

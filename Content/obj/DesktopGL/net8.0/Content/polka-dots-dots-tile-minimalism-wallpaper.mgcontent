@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg</SourceFile>
+  <SourceFile>E:/C# game for cursor/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg</SourceFile>
   <SourceTime>2025-04-13T12:31:05.8926383+05:00</SourceTime>
-  <DestFile>E:/C# game/Content/bin/DesktopGL/Content/polka-dots-dots-tile-minimalism-wallpaper.xnb</DestFile>
-  <DestTime>2025-04-14T12:18:53.1242357+05:00</DestTime>
+  <DestFile>E:/C# game for cursor/Content/bin/DesktopGL/Content/polka-dots-dots-tile-minimalism-wallpaper.xnb</DestFile>
+  <DestTime>2025-05-09T18:02:09.9894233+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T22:05:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -4,14 +4,24 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>e:/C# game/Content/Bricks_01-256x256.png</File>
-    <File>e:/C# game/Content/final gg-2x.png</File>
-    <File>e:/C# game/Content/genmap.png</File>
-    <File>e:/C# game/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg</File>
-    <File>e:/C# game/Content/rectangle.png</File>
-    <File>e:/C# game/Content/rectangle2.png</File>
+    <File>e:/C# game for cursor/Content/bullet.png</File>
+    <File>e:/C# game for cursor/Content/final gg-2x.png</File>
+    <File>e:/C# game for cursor/Content/font.spritefont</File>
+    <File>e:/C# game for cursor/Content/genmap.png</File>
+    <File>e:/C# game for cursor/Content/pistol.png</File>
+    <File>e:/C# game for cursor/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg</File>
+    <File>e:/C# game for cursor/Content/rectangle.png</File>
+    <File>e:/C# game for cursor/Content/rectangle2.png</File>
+    <File>e:/C# game for cursor/Content/rifl.png</File>
+    <File>e:/C# game for cursor/Content/sniper.png</File>
+    <File>e:/C# game for cursor/Content/wall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

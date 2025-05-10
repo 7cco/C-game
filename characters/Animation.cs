@@ -46,7 +46,7 @@ public class Animation
         if (!_active) return;
 
         // Обновляем таймер анимации с учетом дельта-времени
-        _frameTimeLeft -= context.TotalSeconds;
+        _frameTimeLeft -= (float)context.TotalSeconds;
 
         if (_frameTimeLeft <= 0)
         {
@@ -55,19 +55,16 @@ public class Animation
         }
     }
 
-    public void Draw(GameContext context, Vector2 pos)
+    public void Draw(GameContext context, Vector2 position, Color? tint = null)
     {
-        // Рисуем текущий кадр анимации
+        if (_frame >= 0 && _frame < _sourceRectangles.Count)
+        {
         context.SpriteBatch.Draw(
             _texture,
-            pos,
+                position,
             _sourceRectangles[_frame],
-            Color.White,
-            0,
-            Vector2.Zero,
-            Vector2.One,
-            SpriteEffects.None,
-            1
+                tint ?? Color.White
         );
+        }
     }
 }

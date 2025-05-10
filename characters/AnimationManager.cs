@@ -29,11 +29,11 @@ public class AnimationManager
         }
     }
 
-    public void Draw(GameContext context, Vector2 position)
+    public void Draw(GameContext context, Vector2 position, Color? tint = null)
     {
         if (_lastKey != null && _anims.ContainsKey(_lastKey))
         {
-            _anims[_lastKey].Draw(context, position); // Рисуем анимацию через контекст
+            _anims[_lastKey].Draw(context, position, tint ?? Color.White);
         }
     }
 }

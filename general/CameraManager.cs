@@ -6,17 +6,19 @@ public class CameraManager
     private Vector2 _position;
     private int _mapWidth;
     private int _mapHeight;
+    public static CameraManager Instance { get; private set; }
+    public Vector2 Position => _position;
     public CameraManager(Viewport viewport, int mapWidth, int mapHeight)
     {
         _viewport = viewport;
         _position = Vector2.Zero;
         _mapWidth = mapWidth;
         _mapHeight = mapHeight;
+        Instance = this; // Initialize the singleton instance
     }
 
-
     /// Устанавливает позицию камеры так, чтобы цель находилась в центре экрана.
-    public void Follow(Vector2 targetPosition)
+     public void Follow(Vector2 targetPosition)
     {
         // Центрируем камеру на целевой позиции
         _position.X = targetPosition.X - _viewport.Width / 2f;

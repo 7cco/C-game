@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/C# game/Content/Bricks_01-256x256.png</SourceFile>
-  <SourceTime>2025-04-13T12:31:49.3002994+05:00</SourceTime>
-  <DestFile>E:/C# game/Content/bin/DesktopGL/Content/Bricks_01-256x256.xnb</DestFile>
-  <DestTime>2025-04-14T12:18:52.2690429+05:00</DestTime>
+  <SourceFile>E:/C# game for cursor/Content/rifl.png</SourceFile>
+  <SourceTime>2025-05-09T11:22:57.8820904+05:00</SourceTime>
+  <DestFile>E:/C# game for cursor/Content/bin/DesktopGL/Content/rifl.xnb</DestFile>
+  <DestTime>2025-05-09T18:02:10.0114281+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T22:05:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

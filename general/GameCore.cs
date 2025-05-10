@@ -1,6 +1,6 @@
 ﻿namespace C__game;
 
-public class Game1 : Game
+public class GameCore : Game
 {
     private readonly GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
@@ -9,7 +9,7 @@ public class Game1 : Game
     private Map _background;
     private CameraManager _camera;
 
-    public Game1()
+    public GameCore()
     {
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
@@ -21,20 +21,15 @@ public class Game1 : Game
         _graphics.PreferredBackBufferWidth = 1024;
         _graphics.PreferredBackBufferHeight = 768;
         _graphics.ApplyChanges();
-
         base.Initialize();
     }      
 
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-        // Создаем контекст игры
         _context = new GameContext(Content, _spriteBatch);
-
         _background = new Map(_context, "genmap");
         _camera = new CameraManager(GraphicsDevice.Viewport, _background.MapWidth, _background.MapHeight);
-        
-        // Инициализируем менеджер игры
         _gameManager = new GameManager(_context);
         _gameManager.Init();
     }

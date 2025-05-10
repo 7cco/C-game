@@ -6,7 +6,7 @@ public class GameContext
     public SpriteBatch SpriteBatch { get; }
     public float TotalSeconds { get; private set; }
 
-    public GameContext(ContentManager content, SpriteBatch spriteBatch)
+    public GameContext(ContentManager content, SpriteBatch spriteBatch) // Изменено
     {
         Content = content;
         SpriteBatch = spriteBatch;

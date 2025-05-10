@@ -243,11 +243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\C# game\\C# game.csproj",
+      "projectUniqueName": "e:\\C# game for cursor\\C# game.csproj",
       "projectName": "C# game",
-      "projectPath": "e:\\C# game\\C# game.csproj",
+      "projectPath": "e:\\C# game for cursor\\C# game.csproj",
       "packagesPath": "C:\\Users\\nicki\\.nuget\\packages\\",
-      "outputPath": "e:\\C# game\\obj\\",
+      "outputPath": "e:\\C# game for cursor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicki\\AppData\\Roaming\\NuGet\\NuGet.Config"
