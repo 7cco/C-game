@@ -4,12 +4,12 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>E:/C# game for cursor/Content/backfon.jpg</File>
     <File>E:/C# game for cursor/Content/bullet.png</File>
     <File>E:/C# game for cursor/Content/final gg-2x.png</File>
     <File>E:/C# game for cursor/Content/font.spritefont</File>
-    <File>E:/C# game for cursor/Content/genmap.png</File>
+    <File>E:/C# game for cursor/Content/level_1.png</File>
     <File>E:/C# game for cursor/Content/pistol.png</File>
-    <File>E:/C# game for cursor/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg</File>
     <File>E:/C# game for cursor/Content/rectangle.png</File>
     <File>E:/C# game for cursor/Content/rectangle2.png</File>
     <File>E:/C# game for cursor/Content/rifl.png</File>

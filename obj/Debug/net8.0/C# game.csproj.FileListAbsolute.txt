@@ -80,7 +80,6 @@ e:\C# game for cursor\bin\Debug\net8.0\Content\bullet.xnb
 e:\C# game for cursor\bin\Debug\net8.0\Content\final gg-2x.xnb
 e:\C# game for cursor\bin\Debug\net8.0\Content\genmap.xnb
 e:\C# game for cursor\bin\Debug\net8.0\Content\pistol.xnb
-e:\C# game for cursor\bin\Debug\net8.0\Content\polka-dots-dots-tile-minimalism-wallpaper.xnb
 e:\C# game for cursor\bin\Debug\net8.0\Content\rectangle.xnb
 e:\C# game for cursor\bin\Debug\net8.0\Content\rectangle2.xnb
 e:\C# game for cursor\bin\Debug\net8.0\Content\rifl.xnb
@@ -113,3 +112,5 @@ e:\C# game for cursor\obj\Debug\net8.0\C# game.pdb
 E:\C# game for cursor\obj\Debug\net8.0\C# game.genruntimeconfig.cache
 E:\C# game for cursor\obj\Debug\net8.0\ref\C# game.dll
 e:\C# game for cursor\bin\Debug\net8.0\Content\font.xnb
+e:\C# game for cursor\bin\Debug\net8.0\Content\backfon.xnb
+e:\C# game for cursor\bin\Debug\net8.0\Content\level_1.xnb

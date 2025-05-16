@@ -1,10 +1,10 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"E:/C# game for cursor/Content/backfon.jpg","E:/C# game for cursor/Content/bin/DesktopGL/Content/backfon.xnb","TextureProcessor","Texture2DContent",201514,8294485,0.3852136
 "E:/C# game for cursor/Content/bullet.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/bullet.xnb","TextureProcessor","Texture2DContent",105,149,0.1390387
 "E:/C# game for cursor/Content/final gg-2x.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/final gg-2x.xnb","TextureProcessor","Texture2DContent",8541,295765,0.0189641
 "E:/C# game for cursor/Content/font.spritefont","E:/C# game for cursor/Content/bin/DesktopGL/Content/font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.1521111
-"E:/C# game for cursor/Content/genmap.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/genmap.xnb","TextureProcessor","Texture2DContent",310338,4194389,0.1404366
+"E:/C# game for cursor/Content/level_1.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/level_1.xnb","TextureProcessor","Texture2DContent",310338,4194389,0.2494526
 "E:/C# game for cursor/Content/pistol.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/pistol.xnb","TextureProcessor","Texture2DContent",183,4181,0.0048569
-"E:/C# game for cursor/Content/polka-dots-dots-tile-minimalism-wallpaper.jpg","E:/C# game for cursor/Content/bin/DesktopGL/Content/polka-dots-dots-tile-minimalism-wallpaper.xnb","TextureProcessor","Texture2DContent",476181,8294485,0.3237261
 "E:/C# game for cursor/Content/rectangle.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/rectangle.xnb","TextureProcessor","Texture2DContent",204,10085,0.0017789
 "E:/C# game for cursor/Content/rectangle2.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/rectangle2.xnb","TextureProcessor","Texture2DContent",210,10085,0.0064497
 "E:/C# game for cursor/Content/rifl.png","E:/C# game for cursor/Content/bin/DesktopGL/Content/rifl.xnb","TextureProcessor","Texture2DContent",414,16469,0.0113773

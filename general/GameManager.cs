@@ -21,12 +21,12 @@ public class GameManager: ICollisionChecker
     private void CreateBots(GameContext context)
     {
         // Создаем ботов разных типов в разных позициях
-        _bots.Add(new Bot(context, new Vector2(500, 500), this, BotType.Pistol));    // Бот с пистолетом
-        _bots.Add(new Bot(context, new Vector2(700, 320), this, BotType.Sniper));    // Снайпер
-        _bots.Add(new Bot(context, new Vector2(300, 700), this, BotType.Assault));   // Штурмовик
-        _bots.Add(new Bot(context, new Vector2(500, 500), this, BotType.Pistol));    // Бот с пистолетом
-        _bots.Add(new Bot(context, new Vector2(700, 320), this, BotType.Sniper));    // Снайпер
-        _bots.Add(new Bot(context, new Vector2(300, 700), this, BotType.Assault));   // Штурмовикы
+        _bots.Add(new Bot(context, new Vector2(500, 500), this, BotType.Sniper));    
+        _bots.Add(new Bot(context, new Vector2(700, 320), this, BotType.Sniper));    
+        _bots.Add(new Bot(context, new Vector2(300, 700), this, BotType.Sniper));   
+        _bots.Add(new Bot(context, new Vector2(500, 500), this, BotType.Sniper));    
+        _bots.Add(new Bot(context, new Vector2(700, 320), this, BotType.Sniper));    
+        _bots.Add(new Bot(context, new Vector2(300, 700), this, BotType.Sniper));   
         
         // Устанавливаем героя как цель для всех ботов
         foreach (var bot in _bots)
