@@ -7,23 +7,22 @@ public class Bot: HealthEntity
     private Vector2 _direction;
     private Vector2 _previousPosition;
     private BTNode _behaviorTree;
-    private readonly Shoot _shoot;
-    private float _shootCooldown;
-    private float _shootCooldownTime;
-    private const float PATROL_SPEED = 200f;
-    private const float COMBAT_SPEED = 100f;
-    private float _currentSpeed = PATROL_SPEED;
-    private const float BOT_MAX_HEALTH = 50f;
-    private const float BOT_DAMAGE = 10f;
-    private float _damageFlashTime = 0f;
-    private const float DAMAGE_FLASH_DURATION = 0.2f;
-    private IRangedWeapon _currentWeapon;
+    protected readonly Shoot _shoot;
+    protected float _shootCooldown;
+    protected const float PATROL_SPEED = 200f;
+    protected const float COMBAT_SPEED = 100f;
+    protected float _currentSpeed = PATROL_SPEED;
+    protected const float BOT_MAX_HEALTH = 50f;
+    protected const float BOT_DAMAGE = 10f;
+    protected float _damageFlashTime = 0f;
+    protected const float DAMAGE_FLASH_DURATION = 0.2f;
+    protected IRangedWeapon _currentWeapon;
 
     public Hero Target { get; set; }
     public Vector2 Position { get => _position; set => _position = value; }
     public Vector2 Direction => _direction;
-    private readonly ICollisionChecker _collisionChecker;
-    private readonly GameContext _context;
+    protected readonly ICollisionChecker _collisionChecker;
+    protected readonly GameContext _context;
 
     public Bot(GameContext context, Vector2 startPosition, ICollisionChecker collisionChecker, BotType botType = BotType.Pistol)
         : base(BOT_MAX_HEALTH)
@@ -34,14 +33,6 @@ public class Bot: HealthEntity
         _previousPosition = startPosition;
         _direction = Vector2.Zero;
         _texture = context.Content.Load<Texture2D>("final gg-2x");
-
-        // Устанавливаем время перезарядки в зависимости от типа бота
-        _shootCooldownTime = botType switch
-        {
-            BotType.Assault => 0.1f,  // 10 выстрелов в секунду для автомата
-            BotType.Sniper => 1.0f,   // 1 выстрел в секунду для снайпера
-            _ => 0.5f                 // 2 выстрела в секунду для пистолета
-        };
 
         // Инициализируем оружие в зависимости от типа бота
         _currentWeapon = botType switch
@@ -58,28 +49,28 @@ public class Bot: HealthEntity
         
         Animations = new AnimationManager();
 
-        Animations.AddAnimation(new Vector2(0, 1), new Animation(_texture, 6, 4, 0.1f, 4));   // Вниз
-        Animations.AddAnimation(new Vector2(-1, 0), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево
-        Animations.AddAnimation(new Vector2(1, 0), new Animation(_texture, 6, 4, 0.1f, 1));  // Вправо
-        Animations.AddAnimation(new Vector2(0, -1), new Animation(_texture, 6, 4, 0.1f, 3)); // Вверх
-        Animations.AddAnimation(new Vector2(-1, 1), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево-вниз
-        Animations.AddAnimation(new Vector2(-1, -1), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево-вверх
-        Animations.AddAnimation(new Vector2(1, 1), new Animation(_texture, 6, 4, 0.1f, 1));  // Вправо-вниз
-        Animations.AddAnimation(new Vector2(1, -1), new Animation(_texture, 6, 4, 0.1f, 1)); // Вправо-вверх
+        Animations.AddAnimation(new Vector2(0, 1), new Animation(_texture, 6, 4, 0.1f, 4));   
+        Animations.AddAnimation(new Vector2(-1, 0), new Animation(_texture, 6, 4, 0.1f, 2)); 
+        Animations.AddAnimation(new Vector2(1, 0), new Animation(_texture, 6, 4, 0.1f, 1));  
+        Animations.AddAnimation(new Vector2(0, -1), new Animation(_texture, 6, 4, 0.1f, 3)); 
+        Animations.AddAnimation(new Vector2(-1, 1), new Animation(_texture, 6, 4, 0.1f, 2)); 
+        Animations.AddAnimation(new Vector2(-1, -1), new Animation(_texture, 6, 4, 0.1f, 2)); 
+        Animations.AddAnimation(new Vector2(1, 1), new Animation(_texture, 6, 4, 0.1f, 1));  
+        Animations.AddAnimation(new Vector2(1, -1), new Animation(_texture, 6, 4, 0.1f, 1)); 
 
         // Настраиваем поведение в зависимости от типа бота
         float combatRange = botType switch
         {
-            BotType.Sniper => 600f,  // Снайперы держат большую дистанцию
-            BotType.Assault => 300f,  // Штурмовики атакуют на средней дистанции
-            _ => 200f                 // Пистолетчики подходят ближе
+            BotType.Sniper => 600f,  
+            BotType.Assault => 300f,  
+            _ => 200f                 
         };
 
         float minDistance = botType switch
         {
-            BotType.Sniper => 500f,   // Снайперы держат большую минимальную дистанцию
-            BotType.Assault => 150f,  // Штурмовики держат среднюю дистанцию
-            _ => 100f                 // Пистолетчики могут подходить ближе
+            BotType.Sniper => 500f,   
+            BotType.Assault => 150f, 
+            _ => 100f                 
         };
 
         _behaviorTree = new Selector(
@@ -130,17 +121,15 @@ public class Bot: HealthEntity
 
         Animations.Update(context, _direction);
 
-        if (_currentSpeed == COMBAT_SPEED)
-        {
-            _shoot.UpdateBullets(context);
-        }
+       
+        _shoot.UpdateBullets(context);
 
         // Обновляем текущее оружие
         _currentWeapon.Position = _position;
         _currentWeapon.Update(context);
     }
 
-    public void Draw(GameContext context)
+    public virtual void Draw(GameContext context)
     {
         // Рисуем текущую анимацию в позиции бота с эффектом получения урона
         Color tint = _isDead ? Color.Red : (_damageFlashTime > 0 ? Color.Red : Color.White);
@@ -158,7 +147,6 @@ public class Bot: HealthEntity
         const int BAR_HEIGHT = 5;
         const int BAR_OFFSET_Y = -10;
 
-        // Фон полоски здоровья (красный)
         Rectangle backgroundRect = new Rectangle(
             (int)_position.X,
             (int)_position.Y + BAR_OFFSET_Y,
@@ -171,7 +159,6 @@ public class Bot: HealthEntity
             Color.Red
         );
 
-        // Текущее здоровье (зеленый)
         Rectangle healthRect = new Rectangle(
             (int)_position.X,
             (int)_position.Y + BAR_OFFSET_Y,
@@ -197,14 +184,14 @@ public class Bot: HealthEntity
         _position = _previousPosition;
     }
 
-    public void SetCombatMode(bool isCombat)
+    public virtual void SetCombatMode(bool isCombat)
     {
         _currentSpeed = isCombat ? COMBAT_SPEED : PATROL_SPEED;
     }
 
     public float CurrentSpeed => _currentSpeed;
 
-    public void TryShoot()
+    public virtual void TryShoot()
     {
         UpdateShooting();
     }
@@ -213,7 +200,7 @@ public class Bot: HealthEntity
     {
         if (_shootCooldown <= 0 && Target != null && !_isDead)
         {
-            // Проверяем наличие патронов и начинаем перезарядку, если их нет
+            
             if (_currentWeapon.CurrentAmmo <= 0)
             {
                 _currentWeapon.StartReload();
@@ -225,7 +212,7 @@ public class Bot: HealthEntity
             {
                 shootDirection = Vector2.Normalize(shootDirection);
                 _shoot.FireAtDirection(_context, shootDirection, _position);
-                _shootCooldown = _shootCooldownTime;
+                _shootCooldown = 1.0f / _currentWeapon.FireRate;
             }
         }
     }
@@ -239,13 +226,14 @@ public class Bot: HealthEntity
     protected override void OnDeath()
     {
         // Останавливаем движение и стрельбу при смерти
-        _position = _position; // Сохраняем последнюю позицию
+        _direction = Vector2.Zero;
+        
+        // Убедимся, что все пули обновляются даже после смерти
+        if (_shoot != null && _context != null)
+        {
+            // Выполним финальное обновление пуль и очистим оставшиеся
+            _shoot.UpdateBullets(_context);
+            _shoot.ClearBullets();
+        }
     }
-}
-
-public enum BotType
-{
-    Pistol,
-    Sniper,
-    Assault
 }

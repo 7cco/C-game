@@ -70,19 +70,16 @@ public class MainMenu
 
     private void StartGame()
     {
-        // Переход к игре (например, загрузка первого уровня)
         GameCore.Instance.StartGame();
     }
 
     private void SelectLevel()
     {
-        // Переход к экрану выбора уровня
         GameCore.Instance.ShowLevelSelection();
     }
 
     private void ExitGame()
     {
-        // Выход из игры
         GameCore.Instance.Exit();
     }
 }

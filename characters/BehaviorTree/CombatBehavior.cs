@@ -13,17 +13,17 @@ public class CombatBehavior : BTNode
         _arrivalDistance = arrivalDistance;
         _minDistance = minDistance;
         
-        // Инициализируем возможные направления отступления
+
         _retreatDirections = new Vector2[]
         {
-            new Vector2(-1, 0),  // Влево
-            new Vector2(1, 0),   // Вправо
-            new Vector2(0, -1),  // Вверх
-            new Vector2(0, 1),   // Вниз
-            new Vector2(-0.707f, -0.707f), // Влево-вверх
-            new Vector2(0.707f, -0.707f),  // Вправо-вверх
-            new Vector2(-0.707f, 0.707f),  // Влево-вниз
-            new Vector2(0.707f, 0.707f)    // Вправо-вниз
+            new Vector2(-1, 0),  
+            new Vector2(1, 0),   
+            new Vector2(0, -1),  
+            new Vector2(0, 1),   
+            new Vector2(-1, -1), 
+            new Vector2(1, -1), 
+            new Vector2(-1, 1),  
+            new Vector2(1, 1)   
         };
     }
 

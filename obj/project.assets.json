@@ -243,11 +243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\C# game for cursor\\C# game.csproj",
+      "projectUniqueName": "e:\\C# game\\C# game.csproj",
       "projectName": "C# game",
-      "projectPath": "e:\\C# game for cursor\\C# game.csproj",
+      "projectPath": "e:\\C# game\\C# game.csproj",
       "packagesPath": "C:\\Users\\nicki\\.nuget\\packages\\",
-      "outputPath": "e:\\C# game for cursor\\obj\\",
+      "outputPath": "e:\\C# game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicki\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -304,7 +304,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,11 +4,17 @@ public class AnimationManager
 {
     private readonly Dictionary<object, Animation> _anims = [];
     private object _lastKey;
+    private float _scale = 1.0f;
 
     public void AddAnimation(object key, Animation animation)
     {
         _anims.Add(key, animation);
         _lastKey ??= key; // Инициализируем _lastKey, если он еще не установлен
+    }
+
+    public void SetScale(float scale)
+    {
+        _scale = scale;
     }
 
     public void Update(GameContext context, object key)
@@ -33,7 +39,7 @@ public class AnimationManager
     {
         if (_lastKey != null && _anims.ContainsKey(_lastKey))
         {
-            _anims[_lastKey].Draw(context, position, tint ?? Color.White);
+            _anims[_lastKey].Draw(context, position, tint ?? Color.White, _scale);
         }
     }
 }

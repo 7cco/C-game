@@ -55,16 +55,18 @@ public class Animation
         }
     }
 
-    public void Draw(GameContext context, Vector2 position, Color? tint = null)
+    public void Draw(GameContext context, Vector2 position, Color? tint = null, float scale = 1.0f)
     {
         if (_frame >= 0 && _frame < _sourceRectangles.Count)
         {
-        context.SpriteBatch.Draw(
-            _texture,
-                position,
-            _sourceRectangles[_frame],
-                tint ?? Color.White
-        );
+            Rectangle sourceRect = _sourceRectangles[_frame];
+                context.SpriteBatch.Draw(
+                    _texture,
+                    position,
+                    sourceRect,
+                    tint ?? Color.White
+                );
+            
         }
     }
 }

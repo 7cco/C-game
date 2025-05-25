@@ -12,7 +12,7 @@ public class Bullet
     private Vector2 _direction;
     private readonly float _speed;
     private bool _isActive = true;
-    private readonly ICollisionChecker _collisionChecker;
+    private readonly IBulletCollisionChecker _collisionChecker;
     private readonly GameContext _context;
     private readonly List<Bot> _bots;
     private readonly float _damage;
@@ -20,8 +20,19 @@ public class Bullet
     private readonly float _range;
     private Vector2 _startPosition;
     private float _distanceTraveled;
+    private readonly float _maxStepSize;
 
-    public Bullet(GameContext context, Vector2 startPosition, Vector2 direction, ICollisionChecker collisionChecker, List<Bot> bots, float damage = 10f, bool isPlayerBullet = true, float speed = 800f, float range = 300f)
+    public Bullet(
+        GameContext context, 
+        Vector2 startPosition, 
+        Vector2 direction, 
+        IBulletCollisionChecker collisionChecker, 
+        List<Bot> bots, 
+        float damage = 10f, 
+        bool isPlayerBullet = true, 
+        float speed = 800f, 
+        float range = 300f,
+        float maxStepSize = 10f)
     {
         _texture = context.Content.Load<Texture2D>("bullet");
         _position = startPosition;
@@ -35,6 +46,7 @@ public class Bullet
         _speed = speed;
         _range = range;
         _distanceTraveled = 0f;
+        _maxStepSize = maxStepSize;
     }
 
     public void Update(GameTime gameTime)
@@ -42,7 +54,18 @@ public class Bullet
         if (!_isActive) return;
         
         float moveDistance = _speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-        _position += _direction * moveDistance;
+        Vector2 newPosition = _position + _direction * moveDistance;
+
+        // Проверяем коллизии вдоль пути движения
+        var collisionPoint = _collisionChecker.GetCollisionPoint(_position, newPosition, _maxStepSize);
+        if (collisionPoint.HasValue)
+        {
+            _position = collisionPoint.Value;
+            _isActive = false;
+            return;
+        }
+
+        _position = newPosition;
         _distanceTraveled += moveDistance;
 
         // Проверяем, не превышена ли дальность стрельбы
@@ -75,12 +98,8 @@ public class Bullet
             }
         }
 
+        // Проверяем выход за границы игрового поля
         if (_position.X < 0 || _position.X > 2000 || _position.Y < 0 || _position.Y > 2000)
-        {
-            _isActive = false;
-        }
-
-        if (_collisionChecker.CheckCollision(Bounds))
         {
             _isActive = false;
         }

@@ -6,13 +6,21 @@ public class ObstacleManager
 
     public void AddObstacle(GameContext context, string textureName, Vector2 position, int width, int height)
     {
-        // Создаем новое препятствие и добавляем его в список
         _obstacles.Add(new Obstacle(context, textureName, position, width, height));
+    }
+
+    public void AddInvisibleObstacle(GameContext context, Vector2 position, int width, int height)
+    {
+        _obstacles.Add(new Obstacle(context, "wall", position, width, height, false));
+    }
+
+    public void ClearObstacles()
+    {
+        _obstacles.Clear();
     }
 
     public void Draw(GameContext context)
     {
-        // Рисуем все препятствия
         foreach (var obstacle in _obstacles)
         {
             obstacle.Draw(context);

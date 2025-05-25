@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/C# game for cursor/Content/backfon.jpg</SourceFile>
+  <SourceFile>E:/C# game/Content/backfon.jpg</SourceFile>
   <SourceTime>2025-05-16T15:24:42.3980464+05:00</SourceTime>
-  <DestFile>E:/C# game for cursor/Content/bin/DesktopGL/Content/backfon.xnb</DestFile>
-  <DestTime>2025-05-16T15:24:50.2142265+05:00</DestTime>
+  <DestFile>E:/C# game/Content/bin/DesktopGL/Content/backfon.xnb</DestFile>
+  <DestTime>2025-05-25T12:05:35.4141126+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T22:05:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

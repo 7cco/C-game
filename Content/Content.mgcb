@@ -68,7 +68,7 @@
 /processorParam:TextureFormat=Color
 /build:level_1.png
 
-#begin level_1.png
+#begin level_2.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -78,7 +78,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:level_1.png
+/build:level_2.png
 
 #begin pistol.png
 /importer:TextureImporter

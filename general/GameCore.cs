@@ -1,12 +1,5 @@
 ﻿namespace C__game;
 
-public enum GameState
-{
-    MainMenu,
-    LevelSelection,
-    Playing
-}
-
 public class GameCore : Game
 {
     private readonly GraphicsDeviceManager _graphics;
@@ -20,6 +13,7 @@ public class GameCore : Game
     private CameraManager _camera;
 
     public static GameCore Instance { get; private set; }
+    public GameManager GameManager => _gameManager;
 
     public GameCore()
     {

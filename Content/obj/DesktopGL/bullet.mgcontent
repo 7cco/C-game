@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>e:/C# game for cursor/Content/bullet.png</SourceFile>
+  <SourceFile>e:/C# game for cursor — копия/Content/bullet.png</SourceFile>
   <SourceTime>2025-05-09T10:28:16.9121338+05:00</SourceTime>
-  <DestFile>e:/C# game for cursor/Content/bin/DesktopGL/bullet.xnb</DestFile>
-  <DestTime>2025-05-16T15:51:39.8208182+05:00</DestTime>
+  <DestFile>e:/C# game for cursor — копия/Content/bin/DesktopGL/bullet.xnb</DestFile>
+  <DestTime>2025-05-24T13:49:36.811379+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T22:05:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

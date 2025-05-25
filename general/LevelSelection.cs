@@ -5,11 +5,10 @@ public class LevelSelection
     private readonly GameContext _context;
     private Texture2D _backgroundTexture;
     private SpriteFont _font;
-    private int _selectedLevel = 0; // Индекс выбранного уровня
+    private int _selectedLevel = 0; 
     private readonly string[] _levels = { "Level 1", "Level 2", "Level 3" };
     private KeyboardState previousKeyboardState;
-    private bool isMenuOpen = false; // Новая переменная для отслеживания состояния меню
-
+    private bool isMenuOpen = false; 
     public LevelSelection(GameContext context)
     {
         _context = context;
@@ -25,14 +24,14 @@ public class LevelSelection
     {
         var keyboardState = Keyboard.GetState();
 
-        // Проверяем, открыто ли меню
+        
         if (!isMenuOpen)
         {
-            // Если меню не открыто, проверяем нажатие клавиши для его открытия
+            
             if (keyboardState.IsKeyDown(Keys.Enter) && !previousKeyboardState.IsKeyDown(Keys.Enter))
             {
                 isMenuOpen = true; // Открываем меню
-                _selectedLevel = 0; // Сбрасываем выбор уровня на первый
+                //_selectedLevel = 0; // Сбрасываем выбор уровня на первый
             }
         }
         else
@@ -75,7 +74,13 @@ public class LevelSelection
 
     private void LoadSelectedLevel()
     {
-        // Загрузка выбранного уровня
-        GameCore.Instance.LoadLevel(_selectedLevel + 1);
+        int levelNumber = _selectedLevel + 1;
+        GameCore.Instance.LoadLevel(levelNumber);
+        
+        // Пересоздаем препятствия для нового уровня
+        if (GameCore.Instance.GameManager != null)
+        {
+            GameCore.Instance.GameManager.RecreateLevels(_context, levelNumber);
+        }
     }
 }

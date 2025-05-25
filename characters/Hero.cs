@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Hero: HealthEntity
 {
     private Texture2D _texture;
-    private Vector2 _position = new(100, 100);
+    private Vector2 _position = new(900, 970);
     private readonly float _speed = 200f;
     private readonly Shoot _shoot;
     private const float HERO_MAX_HEALTH = 100f;
@@ -20,13 +20,11 @@ public class Hero: HealthEntity
     public Hero(GameContext context, ICollisionChecker collisionChecker, List<Bot> bots)
         : base(HERO_MAX_HEALTH)
     {
-        // Загружаем текстуру через контекст
+
         _texture = context.Content.Load<Texture2D>("final gg-2x");
         _shoot = new Shoot(_position, collisionChecker, context, bots);
-        // Инициализируем менеджер анимаций
         Animations = new AnimationManager();
 
-        // Инициализируем оружие
         _weapons = new Dictionary<Type, IRangedWeapon>
         {
             { typeof(Pistol), new Pistol(context.Content.Load<Texture2D>("pistol")) },
@@ -34,13 +32,11 @@ public class Hero: HealthEntity
             { typeof(AssaultRifle), new AssaultRifle(context.Content.Load<Texture2D>("rifl")) }
         };
 
-        // Устанавливаем пистолет как начальное оружие
         _currentWeapon = _weapons[typeof(Pistol)];
         _shoot.SetWeapon(_currentWeapon);
-        // Обновляем характеристики стрельбы для начального оружия
+
         _shoot.UpdateWeaponStats(_currentWeapon.Damage, _currentWeapon.FireRate, _currentWeapon.Range, _currentWeapon.BulletSpeed);
 
-        // Добавляем анимации для всех направлений движения
         Animations.AddAnimation(new Vector2(0, 1), new Animation(_texture, 6, 4, 0.1f, 4));   // Вниз
         Animations.AddAnimation(new Vector2(-1, 0), new Animation(_texture, 6, 4, 0.1f, 2)); // Влево
         Animations.AddAnimation(new Vector2(1, 0), new Animation(_texture, 6, 4, 0.1f, 1));  // Вправо
@@ -93,7 +89,6 @@ public class Hero: HealthEntity
             SwitchWeapon<AssaultRifle>();
         }
 
-        // Проверяем перезарядку
         if (InputManager.IsReloading())
         {
             _currentWeapon.StartReload();
@@ -116,10 +111,8 @@ public class Hero: HealthEntity
         Color tint = _damageFlashTime > 0 ? Color.Red : Color.White;
         Animations.Draw(context, _position, tint);
 
-        // Рисуем текущее оружие
         _currentWeapon.Draw(context);
 
-        // Рисуем пули
         _shoot.Draw(context);
         DrawHealthBar(context);
     }

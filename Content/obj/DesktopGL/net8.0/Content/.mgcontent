@@ -4,19 +4,21 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>E:/C# game for cursor/Content/backfon.jpg</File>
-    <File>E:/C# game for cursor/Content/bullet.png</File>
-    <File>E:/C# game for cursor/Content/final gg-2x.png</File>
-    <File>E:/C# game for cursor/Content/font.spritefont</File>
-    <File>E:/C# game for cursor/Content/level_1.png</File>
-    <File>E:/C# game for cursor/Content/pistol.png</File>
-    <File>E:/C# game for cursor/Content/rectangle.png</File>
-    <File>E:/C# game for cursor/Content/rectangle2.png</File>
-    <File>E:/C# game for cursor/Content/rifl.png</File>
-    <File>E:/C# game for cursor/Content/sniper.png</File>
-    <File>E:/C# game for cursor/Content/wall.png</File>
+    <File>E:/C# game/Content/backfon.jpg</File>
+    <File>E:/C# game/Content/bullet.png</File>
+    <File>E:/C# game/Content/final gg-2x.png</File>
+    <File>E:/C# game/Content/font.spritefont</File>
+    <File>E:/C# game/Content/level_1.png</File>
+    <File>E:/C# game/Content/level_2.png</File>
+    <File>E:/C# game/Content/pistol.png</File>
+    <File>E:/C# game/Content/rectangle.png</File>
+    <File>E:/C# game/Content/rectangle2.png</File>
+    <File>E:/C# game/Content/rifl.png</File>
+    <File>E:/C# game/Content/sniper.png</File>
+    <File>E:/C# game/Content/wall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

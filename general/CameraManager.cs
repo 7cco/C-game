@@ -14,10 +14,10 @@ public class CameraManager
         _position = Vector2.Zero;
         _mapWidth = mapWidth;
         _mapHeight = mapHeight;
-        Instance = this; // Initialize the singleton instance
+        Instance = this; // Экземпляр Синглтона
     }
 
-    /// Устанавливает позицию камеры так, чтобы цель находилась в центре экрана.
+    // Устанавливает позицию камеры так, чтобы цель находилась в центре экрана.
      public void Follow(Vector2 targetPosition)
     {
         // Центрируем камеру на целевой позиции
